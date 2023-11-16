@@ -5,89 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:padding="5dp"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:padding="5dp"
     tools:context=".SignupActivity">
-    
+
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/logo"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="22sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
         android:letterSpacing="0.07"
-        android:text="Tik Tok" />
+        android:text="Tik Tok"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_margin="12dp"
-        android:text="Signup" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:text="Signup"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_corner"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:padding="12dp"
-            android:background="@drawable/rounded_corner"
-            android:layout_margin="12dp"/>
+            android:padding="12dp" />
+
         <EditText
             android:id="@+id/password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_corner"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="12dp"
-            android:background="@drawable/rounded_corner"
-            android:layout_margin="12dp"/>
+            android:padding="12dp" />
+
         <EditText
             android:id="@+id/confirm_password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_corner"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            android:padding="12dp"
-            android:background="@drawable/rounded_corner"
-            android:layout_margin="12dp"/>
+            android:padding="12dp" />
 
         <Button
             android:id="@+id/submit_btn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Signup"
             android:layout_margin="12dp"
-            android:padding="12dp"/>
+            android:padding="12sp"
+            android:text="Signup" />
+
         <ProgressBar
             android:id="@+id/progress_bar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="12dp"
-            android:visibility="gone"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/go_to_login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an account"/>
+            android:text="Already have an account" />
 
     </LinearLayout>
 </LinearLayout>
