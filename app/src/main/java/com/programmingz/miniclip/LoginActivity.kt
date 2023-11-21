@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
             binding.submitBtn.visibility = View.GONE
         } else {
             binding.progressBar.visibility = View.GONE
-            binding.progressBar.visibility = View.VISIBLE
+            binding.submitBtn.visibility = View.VISIBLE
         }
     }
 
